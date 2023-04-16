@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -28,7 +27,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  final FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   void _incrementCounter() {
     setState(() {
