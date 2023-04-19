@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:todo_list/core/enum/sort_field_enum.dart';
 import 'package:todo_list/core/enum/sort_type_enum.dart';
 import 'package:todo_list/core/constants/app_text_styles.dart';
-import 'package:todo_list/core/constants/app_text_styles.dart';
 
 class SortTypesWidget extends StatelessWidget {
   const SortTypesWidget({

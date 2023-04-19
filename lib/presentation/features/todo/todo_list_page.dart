@@ -1,13 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_list/core/extensions/extensions.dart';
 import 'package:todo_list/core/router/app_router.dart';
 import 'package:todo_list/injection/injector.dart';
 import 'package:todo_list/presentation/bloc/todo_bloc/todo_cubit.dart';
 import 'package:todo_list/presentation/features/todo/widgets/sort_selected_option_widget.dart';
 import 'package:todo_list/presentation/features/todo/widgets/sort_drawer_widget.dart';
-// import 'package:todo_list/presentation/features/todo/widgets/sort_drawer_widget.dart';
 import 'package:todo_list/presentation/features/todo/widgets/todo_list_widget.dart';
 
 @RoutePage()
