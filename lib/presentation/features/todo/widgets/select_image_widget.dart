@@ -20,7 +20,6 @@ class SelectImageWidget extends StatelessWidget {
       onTap: () => _onSelectImage(context),
       child: Container(
         height: 150,
-        constraints: BoxConstraints(minHeight: 150),
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -32,6 +31,7 @@ class SelectImageWidget extends StatelessWidget {
             : Image.memory(
                 imageBytes!,
                 fit: BoxFit.contain,
+                gaplessPlayback: true,
               ),
       ),
     );

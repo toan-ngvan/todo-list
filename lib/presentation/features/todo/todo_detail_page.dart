@@ -287,7 +287,12 @@ class _TodoDetailPageState extends State<TodoDetailPage> {
 
   Future<void> _onSelectImage(ImageSource imageSource) async {
     try {
-      final XFile? image = await ImagePicker().pickImage(source: imageSource);
+      final XFile? image = await ImagePicker().pickImage(
+        source: imageSource,
+        maxWidth: 500,
+        maxHeight: 500,
+        imageQuality: 20,
+      );
 
       if (image == null) {
         return;

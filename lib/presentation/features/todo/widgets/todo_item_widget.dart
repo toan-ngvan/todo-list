@@ -78,14 +78,13 @@ class TodoItemWidget extends StatelessWidget {
             ),
             // Image
             if (_todoEntity.fileDecode != null)
-              Container(
+              SizedBox(
                 width: 60,
                 height: 60,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: MemoryImage(_todoEntity.fileDecode!),
-                    fit: BoxFit.cover,
-                  ),
+                child: Image.memory(
+                  _todoEntity.fileDecode!,
+                  fit: BoxFit.cover,
+                  gaplessPlayback: true,
                 ),
               )
           ],
