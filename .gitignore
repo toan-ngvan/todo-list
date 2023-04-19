@@ -46,3 +46,12 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 /android/app/google-services.json
+
+# Generated file
+*.freezed.dart
+*.g.dart
+*.gr.dart
+*.mocks.dart
+
+# Unit Test
+/coverage
