@@ -14,7 +14,7 @@ enum TodoStatus {
   final String text;
 
   bool get isInProgress => value == 0;
-  bool get isCompleted => value == 0;
+  bool get isCompleted => value == 1;
 
   static TodoStatus getByValue(int value) =>
       TodoStatus.values.firstWhereOrNull((t) => t.value == value) ??

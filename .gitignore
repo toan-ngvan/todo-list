@@ -50,3 +50,8 @@ app.*.map.json
 # Generated file
 *.freezed.dart
 *.g.dart
+*.gr.dart
+*.mocks.dart
+
+# Unit Test
+/coverage
