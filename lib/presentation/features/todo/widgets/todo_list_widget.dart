@@ -40,7 +40,6 @@ class TodoListWidget extends StatelessWidget {
         return RefreshIndicator(
           onRefresh: _todoCubit.getTodoList,
           child: ListView.builder(
-            shrinkWrap: true,
             padding: const EdgeInsets.fromLTRB(16, 20, 16, 0),
             itemCount: todoList.length,
             itemBuilder: (_, index) {

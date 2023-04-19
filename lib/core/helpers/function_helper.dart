@@ -12,8 +12,8 @@ class FunctionHelper {
   }
 
   static Future<File> compressImage(File file) async {
-    File compressedImage = await FlutterNativeImage.compressImage(file.path,
-        quality: 20, percentage: 60);
+    File compressedImage =
+        await FlutterNativeImage.compressImage(file.path, percentage: 60);
 
     return compressedImage;
   }
